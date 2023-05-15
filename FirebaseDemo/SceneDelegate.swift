@@ -18,6 +18,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+            if Helper.shared.checkIfJsonFileExists() {
+                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: Identifiers.employeesViewController.rawValue) as! EmployessViewController
+                let navigationController = UINavigationController(rootViewController: viewController)
+                let firBaseAuthManager: FireBaseManagerHelper = FirebaseAuthManager()
+                let viewModel: EmployeesViewModelHelper = EmployeesViewModel(authManagerHelper: firBaseAuthManager,documentID: Helper.shared.getDocumentID(), companyName: Helper.shared.getCompanyName())
+                viewController.employeesViewModelHelper = viewModel
+                window.rootViewController = navigationController
+                self.window = window
+                window.makeKeyAndVisible()
+            } else {
+                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: Identifiers.viewController.rawValue) as! ViewController
+                let navigationController = UINavigationController(rootViewController: viewController)
+                window.rootViewController = navigationController
+                self.window = window
+                window.makeKeyAndVisible()
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
