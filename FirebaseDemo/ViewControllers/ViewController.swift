@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("View did Load")
         self.setCornerRadiusOnButtons()
         self.navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
