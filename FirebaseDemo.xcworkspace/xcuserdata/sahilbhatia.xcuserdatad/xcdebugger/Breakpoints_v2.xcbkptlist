@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4B3027F2-BE2E-44E2-A733-93C1A9D33B28"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "655334B4-C35B-4AD6-A2CA-1F010308D83C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseDemoTests/FirebaseDemoTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "655334B4-C35B-4AD6-A2CA-1F010308D83C - 659040005b0adafa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FirebaseDemoTests.FirebaseDemoTests.testExample() -&gt; ()"
+                  moduleName = "FirebaseDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sahilbhatia/Desktop/Playgrounds/FirebaseDemo/FirebaseDemoTests/FirebaseDemoTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "655334B4-C35B-4AD6-A2CA-1F010308D83C - 85e16af4c8decb4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String, Swift.String) -&gt; () in FirebaseDemoTests.FirebaseDemoTests.testExample() -&gt; ()"
+                  moduleName = "FirebaseDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sahilbhatia/Desktop/Playgrounds/FirebaseDemo/FirebaseDemoTests/FirebaseDemoTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "98">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA083429-C15F-4FC1-9083-505615583C16"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseDemo/Manager/FireBaseAuthManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "createUserWith(email:password:completionBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E0B978C-45F9-43E2-9F00-DE1929E77A37"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseDemo/Manager/FireBaseAuthManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "createUserWith(email:password:completionBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF3D2561-6104-46F9-89C2-77DA3F0272BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseDemo/Manager/FireBaseAuthManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "createUserWith(email:password:completionBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "913B3498-ACB4-4C27-A5DD-6D3C03706247"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseDemo/Manager/FireBaseAuthManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "createUserWith(email:password:completionBlock:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "913B3498-ACB4-4C27-A5DD-6D3C03706247 - 764a58bc84a5b125"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FirebaseDemo.FirebaseAuthManager.createUserWith(email: Swift.String, password: Swift.String, completionBlock: (Swift.Bool, Swift.String, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "FirebaseDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sahilbhatia/Desktop/Playgrounds/FirebaseDemo/FirebaseDemo/Manager/FireBaseAuthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "913B3498-ACB4-4C27-A5DD-6D3C03706247 - 4cee256fe87fd724"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FirebaseDemo.FirebaseAuthManager.createUserWith(email: Swift.String, password: Swift.String, completionBlock: (Swift.Bool, Swift.String, Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "FirebaseDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sahilbhatia/Desktop/Playgrounds/FirebaseDemo/FirebaseDemo/Manager/FireBaseAuthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
