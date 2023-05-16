@@ -47,7 +47,7 @@ class EmployessViewController: UIViewController {
         self.tblView.estimatedRowHeight = 60.0
     }
     
-    
+    // Fetch employees from firestore database or locally based on condition
     func fetchEmployess() {
         if !Helper.shared.checkIfJsonFileExists() {
         self.employeesViewModelHelper?.fetchEmployess()

@@ -36,21 +36,6 @@ class SignUpViewController: UIViewController {
         passwordTextField.isSecureTextEntry.toggle()
     }
     
-    func writeJSON(_ entry: Item) {
-        var array = [Item]()
-        array.append(entry)
-        
-        do {
-            let fileURL = try FileManager.default.url(for: .desktopDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-                .appendingPathComponent("JsonData.json")
-            
-            let encoder = JSONEncoder()
-            try encoder.encode(array).write(to: fileURL)
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
     
     @IBAction func signUpButtonAction(_ sender: Any) {
         if (self.signUpViewModelHelper?.validateTextFields(email: emailTextField.text ?? "", password: passwordTextField.text ?? "", companyName: companyNameTxtField.text ?? ""))! {
@@ -90,5 +75,4 @@ class SignUpViewController: UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
 }
