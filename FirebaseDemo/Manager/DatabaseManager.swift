@@ -9,17 +9,11 @@
 import Foundation
 import FirebaseFirestore
 
-//protocol DataBaseManagerHelper {
-//    func createCollection(companyName: String, documentId: String)
-//    func fetchEmployessFromCollection(documentID: String, _ completionHanlder: @escaping ([String: Any]) -> Void)
-//    func addEmployessToCompany(companyName: String, employees:[[String: Any]], completionBlock: @escaping (_ success: Bool) -> Void)
-//    func editEmployeeInformation(companyName: String, documentId: String, employeeInfo: [[String: Any]], newEmployeeInfo: [[String: Any]], completionBlock: @escaping (_ success: Bool) -> Void)
-//}
-
 class DatabaseManager {
     
     private let database = Firestore.firestore()
     static let shared: DatabaseManager = DatabaseManager()
+    private let jsonFile = "JsonData.json"
     private init() {
         
     }
@@ -144,7 +138,7 @@ class DatabaseManager {
                     companyName, CollectionKeys.documentId.rawValue: documentId, CollectionKeys.employees.rawValue: employees]] as [String : Any]
                 do {
                     let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
-                    self.saveJSONDataToFile(json: jsonData, fileName: "JsonData.json")
+                    self.saveJSONDataToFile(json: jsonData, fileName: self.jsonFile)
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -155,7 +149,7 @@ class DatabaseManager {
     // Create JSON file in Documents Directory with initial data
     func addInitialDataInJsonFile(_ companyName: String, _ documetId: String) {
         // Copy json file from Bundle to Documents Directory to write data into it
-        Helper.shared.copyFileFromBundleToDocumentsFolder(sourceFile: "JsonData.json")
+        Helper.shared.copyFileFromBundleToDocumentsFolder(sourceFile: self.jsonFile)
         let data = [CollectionKeys.collection.rawValue:[CollectionKeys.companyName.rawValue:
             companyName, CollectionKeys.documentId.rawValue: documetId, CollectionKeys.employees.rawValue: []]] as [String : Any]
         do {
@@ -188,7 +182,7 @@ class DatabaseManager {
         }
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: newData, options: .prettyPrinted)
-            self.saveJSONDataToFile(json: jsonData, fileName: "JsonData.json")
+            self.saveJSONDataToFile(json: jsonData, fileName: self.jsonFile)
         } catch {
             print(error.localizedDescription)
         }
