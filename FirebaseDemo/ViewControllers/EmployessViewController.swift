@@ -27,7 +27,6 @@ class EmployessViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("View will appear")
         self.employeesViewModelHelper?.employeeList?.removeAll()
         self.fetchEmployess()
     }

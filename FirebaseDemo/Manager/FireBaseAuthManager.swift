@@ -15,14 +15,10 @@ protocol FireBaseManagerHelper {
     func createUserWith(email: String, password: String, completionBlock: @escaping (_ success: Bool, _ error: String, _ documentId: String) -> Void)
     func signInWith(email: String, password: String, completionBlock: @escaping (_ success: Bool, _ error: String, _ documentId: String) -> Void)
     func signOut()
-    func returnTruefalse() -> Bool
 }
 
 class FirebaseAuthManager: FireBaseManagerHelper {
-    
-    func returnTruefalse() -> Bool {
-        return false
-    }
+    // Sign UP
     func createUserWith(email: String, password: String, completionBlock: @escaping (_ success: Bool, _ error: String, _ documentId: String) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) {(authResult, error) in
             if let user = authResult?.user, error == nil {
@@ -34,6 +30,7 @@ class FirebaseAuthManager: FireBaseManagerHelper {
         }
     }
     
+    // Sign In
     func signInWith(email: String, password: String, completionBlock: @escaping (_ success: Bool, _ error: String, _ documentId: String) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error, let _ = AuthErrorCode(rawValue: error._code) {
@@ -44,6 +41,7 @@ class FirebaseAuthManager: FireBaseManagerHelper {
         }
     }
     
+    // sign Out
     func signOut() {
         do {
            try Auth.auth().signOut()
